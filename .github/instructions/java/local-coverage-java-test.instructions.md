@@ -1,0 +1,5 @@
+---
+applyTo: '*.java'
+---
+After creating the unit tests, make sure they run without errors using maven running test spesific file, and use jacoco to get the coverage results.
+To find uncovered lines, first search for lines not covered in the SonarQube HTML report at `target\site\jacoco\jacoco.csv`, for detailed coverage in `target\site\jacoco` (e.g. `target\site\jacoco\com.jatismobile.filevalidator.validation\SingleValidationEngine.java.html`). If the is not available, compare the Java file with the corresponding test file to identify uncovered code.
