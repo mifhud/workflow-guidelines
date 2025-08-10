@@ -23,7 +23,7 @@ After process each issues, Print/log the values formatted clearly:
     - Cycle = The cycle value of each issue
     -  **IMPORTANT, PLEASE THINK HARDER ON THIS** Last Duration = Use the duration if its' a new sesion chat or the previous chat doesn't have a last duration value. If the previous chat has a last duration value, add it to the current duration.
     - Last Duration Minutes = Get from last duration, then convert to minutes
-    - **IMPORTANT, PLEASE THINK HARDER ON THIS** Only print or log (don't save to file) the value in each issue’s attached markdown file at after the end of file during prompting, only using the following format (don't add any other text):
+    - **IMPORTANT, PLEASE THINK HARDER ON THIS** Save the value in each issue’s attached markdown file at after the end of file during prompting, only using the following format (don't add any other text):
     ```
     Issue Name: {issue_name}
     Start Time Issue: {start_time}
