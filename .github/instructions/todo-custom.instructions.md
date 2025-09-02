@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\todo-custom.md
+@./rules/todo-custom.md

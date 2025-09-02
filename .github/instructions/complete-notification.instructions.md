@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\complete-notification.md
+@./rules/complete-notification.md

@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\cycle-time\simple.md
+@./rules/cycle-time/simple.md

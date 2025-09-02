@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\cycle-time\java-test.md
+@./rules/cycle-time/java-test.md

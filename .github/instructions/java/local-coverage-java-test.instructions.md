@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\java\local-coverage-java-test.md
+@./rules/java/local-coverage-java-test.md

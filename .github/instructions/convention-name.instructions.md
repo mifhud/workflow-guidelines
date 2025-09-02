@@ -1,4 +1,4 @@
 ---
 applyTo: '**'
 ---
-@rules\convention-name\camel-case.md
+@./rules/convention-name/camel-case.md
