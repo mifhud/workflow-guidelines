@@ -4,26 +4,30 @@ import os
 import argparse
 
 def extract_issue_data(file_path):
-    """Extract issue name, cycle, and last duration minutes from a markdown file."""
+    """Extract all issue name, cycle, and last duration minutes entries from a markdown file."""
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
     
-    # Extract Issue Name
-    issue_name_match = re.search(r'Issue Name:\s*(.+)', content)
-    issue_name = issue_name_match.group(1).strip() if issue_name_match else ""
+    # Extract all Issue Names
+    issue_names = re.findall(r'Issue Name:\s*(.+)', content)
     
-    # Extract Cycle
-    cycle_match = re.search(r'Cycle:\s*(\d+)', content)
-    cycle = cycle_match.group(1) if cycle_match else ""
+    # Extract all Cycles
+    cycles = re.findall(r'Cycle:\s*(\d+)', content)
     
-    # Extract Last Duration Minutes
-    duration_match = re.search(r'Last Duration Minutes:\s*([\d.]+)', content)
-    duration = duration_match.group(1) if duration_match else ""
+    # Extract all Last Duration Minutes
+    durations = re.findall(r'Last Duration Minutes:\s*([\d.]+)', content)
     
-    # Replace backslashes with forward slashes in issue name
-    issue_name = issue_name.replace('\\', '/')
+    # Create list of tuples for all entries
+    entries = []
+    max_entries = max(len(issue_names), len(cycles), len(durations))
     
-    return issue_name, cycle, duration
+    for i in range(max_entries):
+        issue_name = issue_names[i].strip().replace('\\', '/') if i < len(issue_names) else ""
+        cycle = cycles[i] if i < len(cycles) else ""
+        duration = durations[i] if i < len(durations) else ""
+        entries.append((issue_name, cycle, duration))
+    
+    return entries
 
 def generate_csv_output(input_folder, output_file):
     """Generate CSV output from issue files."""
@@ -35,9 +39,11 @@ def generate_csv_output(input_folder, output_file):
         if filename.startswith('issue-') and filename.endswith('.md'):
             file_path = os.path.join(input_folder, filename)
             if os.path.exists(file_path):
-                issue_name, cycle, duration = extract_issue_data(file_path)
-                output_data.append([issue_name, cycle, duration])
-                print(f"Processed: {file_path}")
+                entries = extract_issue_data(file_path)
+                # Add all entries from this file
+                for issue_name, cycle, duration in entries:
+                    output_data.append([issue_name, cycle, duration])
+                print(f"Processed: {file_path} ({len(entries)} entries)")
             else:
                 print(f"File not found: {file_path}")
     
