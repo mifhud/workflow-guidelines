@@ -1,0 +1,154 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "localopenrouter": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local OpenRouter",
+      "options": {
+        "baseURL": "http://192.168.100.192:5000/api/v1"
+      },
+      "models": {
+        "z-ai/glm-4.5-air:free": {
+          "name": "GLM 4.5 Air"
+        },
+        "deepseek/deepseek-chat-v3.1:free": {
+          "name": "DeepSeek V3.1"
+        },
+        "openai/gpt-oss-120b:free": {
+          "name": "gpt-oss-120b"
+        },
+        "qwen/qwen3-coder:free": {
+          "name": "Qwen3 Coder 480B A35B"  
+        },
+        "moonshotai/kimi-k2:free": {
+          "name": "Kimi K2 0711"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp",
+        "--api-key",
+        "ctx7sk-8d2cdeb3-9200-4994-b02a-da7f09316917"
+      ],
+      "environment": {}
+    },
+    "sonarqube": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "sonarqube-mcp-server@1.5.1"
+      ],
+      "environment": {
+        "SONARQUBE_URL": "https://sonarqubev8.jatismobile.com",
+        "SONARQUBE_TOKEN": "66dc833bb230f0cabb4de3488bac8e20715b23a9"
+      }
+    },
+    "time": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "mcp-server-time"
+      ],
+      "environment": {}
+    }
+  },
+  "permission": {
+    "bash": "allow",
+    "edit": "ask",
+    "webfetch": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "read": "allow",
+    "write": "ask",
+    "todowrite": "allow",
+    "todoread": "allow",
+    "task": "allow",
+    "context7_resolve_library_id": "allow",
+    "context7_get_library_docs": "allow",
+    "sonarqube_projects": "ask",
+    "sonarqube_metrics": "ask",
+    "sonarqube_issues": "ask",
+    "sonarqube_markIssueFalsePositive": "ask",
+    "sonarqube_markIssueWontFix": "ask",
+    "sonarqube_markIssuesFalsePositive": "ask",
+    "sonarqube_markIssuesWontFix": "ask",
+    "sonarqube_addCommentToIssue": "ask",
+    "sonarqube_assignIssue": "ask",
+    "sonarqube_confirmIssue": "ask",
+    "sonarqube_unconfirmIssue": "ask",
+    "sonarqube_resolveIssue": "ask",
+    "sonarqube_reopenIssue": "ask",
+    "sonarqube_system_health": "ask",
+    "sonarqube_system_status": "ask",
+    "sonarqube_system_ping": "ask",
+    "sonarqube_measures_component": "ask",
+    "sonarqube_measures_components": "ask",
+    "sonarqube_measures_history": "ask",
+    "sonarqube_quality_gates": "ask",
+    "sonarqube_quality_gate": "ask",
+    "sonarqube_quality_gate_status": "ask",
+    "sonarqube_source_code": "ask",
+    "sonarqube_scm_blame": "ask",
+    "sonarqube_hotspots": "ask",
+    "sonarqube_hotspot": "ask",
+    "sonarqube_update_hotspot_status": "ask",
+    "sonarqube_components": "ask",
+    "time_get_current_time": "allow",
+    "time_convert_time": "allow"
+  },
+      "agent": {
+        "tools": {
+            "bash": true,
+            "edit": true,
+            "webfetch": true,
+            "glob": true,
+            "grep": true,
+            "list": true,
+            "read": true,
+            "write": true,
+            "todowrite": true,
+            "todoread": true,
+            "task": true,
+            "context7_resolve_library_id": true,
+            "context7_get_library_docs": true,
+            "sonarqube_projects": true,
+            "sonarqube_metrics": true,
+            "sonarqube_issues": true,
+            "sonarqube_markIssueFalsePositive": true,
+            "sonarqube_markIssueWontFix": true,
+            "sonarqube_markIssuesFalsePositive": true,
+            "sonarqube_markIssuesWontFix": true,
+            "sonarqube_addCommentToIssue": true,
+            "sonarqube_assignIssue": true,
+            "sonarqube_confirmIssue": true,
+            "sonarqube_unconfirmIssue": true,
+            "sonarqube_resolveIssue": true,
+            "sonarqube_reopenIssue": true,
+            "sonarqube_system_health": true,
+            "sonarqube_system_status": true,
+            "sonarqube_system_ping": true,
+            "sonarqube_measures_component": true,
+            "sonarqube_measures_components": true,
+            "sonarqube_measures_history": true,
+            "sonarqube_quality_gates": true,
+            "sonarqube_quality_gate": true,
+            "sonarqube_quality_gate_status": true,
+            "sonarqube_source_code": true,
+            "sonarqube_scm_blame": true,
+            "sonarqube_hotspots": true,
+            "sonarqube_hotspot": true,
+            "sonarqube_update_hotspot_status": true,
+            "sonarqube_components": true,
+            "time_get_current_time": true,
+            "time_convert_time": true
+        }
+    }
+}
