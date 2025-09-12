@@ -1,4 +1,42 @@
 {
+    "hooks": {
+        "Notification": [
+            {
+            "matcher": "",
+            "hooks": [
+                {
+                "type": "command",
+                "command": "powershell.exe -Command \"New-BurntToastNotification -Text \"$1\"\""
+                }
+            ]
+            }
+        ],
+        "Stop": [
+            {
+            "matcher": "",
+            "hooks": [
+                {
+                "type": "command",
+                "command": "powershell.exe -Command \"(New-Object Media.SoundPlayer 'D:\\02 Areas\\04 Coding Tools\\claude_completed.wav').PlaySync()\""
+                }, 
+                {
+                "type": "command",
+                "command": "powershell.exe -Command \"New-BurntToastNotification -Text 'Claude Code', 'Completed'\""
+                }
+            ]
+            }
+        ],
+        "UserPromptSubmit": [
+            {
+            "hooks": [
+                {
+                "type": "command",
+                "command": "echo \"SONAR_PROJECT_KEY is: $SONAR_PROJECT_KEY\""
+                }
+            ]
+            }
+        ]
+    },
     "permissions": {
         "allow": [
             "mcp__time__get_current_time",
