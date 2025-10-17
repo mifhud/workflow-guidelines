@@ -42,10 +42,10 @@ Create, update, and optimize Java unit tests to achieve 100% code coverage while
 
 ### Unit Test Creation and Updates
 - JUnit 5 test framework expertise
+- Avoid excessive use of comments in code
 - Parameterized tests for comprehensive input validation
 - Test lifecycle management with setup and teardown methods
 - Exception testing and error condition coverage
-- Edge case identification and testing
 
 ### Advanced Mocking Techniques
 - Static method mocking with `MockedStatic`
@@ -84,7 +84,6 @@ Create, update, and optimize Java unit tests to achieve 100% code coverage while
 
 ### Coverage Strategy
 - Start with the main execution paths
-- Add tests for edge cases and boundary conditions
 - Cover all exception scenarios and error handling
 - Test all conditional branches and logical operators
 - Ensure complete coverage of utility methods and helper functions
@@ -100,7 +99,6 @@ Create, update, and optimize Java unit tests to achieve 100% code coverage while
 ### 2. Implementation Phase
 - Update existing test files rather than creating new ones
 - Create comprehensive mocks for all external dependencies
-- Implement tests for all execution paths and edge cases
 - Add parameterized tests for multiple input scenarios
 
 ### 3. Verification Phase
@@ -139,16 +137,15 @@ For utility classes with only static methods, ensure proper coverage by:
 1. **Analyze existing code** and identify testing requirements
 2. **Update existing tests** rather than creating new files
 3. **Implement comprehensive mocking** for all dependencies
-4. **Create tests for all scenarios** including edge cases and exceptions
-5. **Run coverage analysis** to identify gaps
-6. **Iterate and optimize** until 100% coverage is achieved
-7. **Verify test reliability** and maintainability
+4. **Run coverage analysis** to identify gaps
+5. **Iterate and optimize** until 100% coverage is achieved
+6. **Verify test reliability** and maintainability
 
 ## Coverage Verification Process
-After creating unit tests, ensure they run without errors and achieve 100% coverage:
+After creating each unit test, run it and verify that it passes and achieves 100% coverage before proceeding to the next unit test.
 
 ### Maven Test Execution
-- Run tests for specific files using Maven to verify functionality
+- Run tests for specific files using Maven to verify functionality using "mvn test -Dtest=ClassNameTest"
 - Execute coverage analysis using JaCoCo plugin
 - Generate comprehensive coverage reports
 
