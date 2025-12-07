@@ -1,4 +1,4 @@
---
+---
 name: uat
 description: Generate User Acceptance Test (UAT) cases from structured templates
 ---
@@ -8,17 +8,33 @@ description: Generate User Acceptance Test (UAT) cases from structured templates
 # Title
 
 ## Overview
-Description
 
 ## Configuration Parameters
 
-## Test Data Requirements
+### {Config Parameter 1}
+- Plain Config Name: {plain config if applicable}
+- Source: {Source of the configuration, e.g., environment variable, config file, etc if applicable}
+- Description: {Description of the configuration parameter}
+- Value: {Value if applicable}
+
+### {Config Parameter 2}
+- Plain Config Name: {plain config if applicable}
+- Source: {Source of the configuration, e.g., environment variable, config file, etc if applicable}
+- Description: {Description of the configuration parameter}
+- Value: {Value if applicable}
 
 ## Test Cases
 
 ### Success Test Case
 
 #### TC-001: {Test Case Description}
+
+### Test Data Requirements (if applicable)
+e.g., mock data DML databases, external system mocks
+
+### Example Payloads (if applicable)
+- HTTP API endpoints only recevied by the application
+- Message-broker queues/topics (e.g., Kafka, RabbitMQ) only consumed by the application
 
 ##### Pre Condition
 
@@ -42,6 +58,12 @@ Description
 ---
 
 ### Exception Test Case
+
+### Test Data Requirements  (if applicable)
+e.g., mock data DML databases, external system mocks
+
+### Example Payloads (if applicable)
+e.g., HTTP request/response samples, message broker payloads
 
 #### TC-001: {Test Case Description}
 

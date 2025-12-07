@@ -1,10 +1,8 @@
 --
-name: uat
-description: Generate Readme Project
+name: home
+description: Generate Home Readme Project
 ---
 
-# Readme Project Template
-```
 # {App Name}
 
 ## Overview
@@ -13,7 +11,7 @@ description: Generate Readme Project
 
 ## Configuration
 
-### Development (in VSCode)
+### Development
 List location files, example:
 - {locaction file 1}: Description
 - {locaction file 2}: Description
@@ -25,18 +23,16 @@ List location files, example:
 
 ## Running the Application
 
-### Development (in VSCode)
+### Development
 
 ### Production
 
 ## Stop the Application
 
-### Development (in VSCode)
+### Development
 
 ### Production
 
 ## Running Unit Test
 
 ## Troubleshooting
-
-```
