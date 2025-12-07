@@ -5,24 +5,38 @@ description: Generate User Acceptance Test (UAT) cases from structured templates
 
 # UAT Test Case Template
 ```
-## Success Test Case
+# Title
 
-### {Test Case Description}
+## Overview
 
-#### Pre Condition
+## Configuration Parameters
+
+## Test Cases
+
+### Success Test Case
+
+#### TC-001: {Test Case Description}
+
+### Test Data Requirements
+e.g., mock data DML databases, external system mocks
+
+### Example Payloads (if applicable)
+e.g., HTTP request/response samples, message broker payloads
+
+##### Pre Condition
 
 - List any setup or requirements before executing the test.
   - Example: "User account exists in the system."
   - Example: "Application is running in staging environment."
 
-#### Steps
+##### Steps
 
 - Step 1: {First action}
 - Step 2: {Next action}
 - Step 3: {Continue until complete}
   *(Keep each step atomic and written from the tester’s perspective.)*
 
-#### Expected Result
+##### Expected Result
 
 - Describe the correct system behavior when the steps are executed successfully.
   - Example: "User is redirected to the dashboard page."
@@ -30,26 +44,31 @@ description: Generate User Acceptance Test (UAT) cases from structured templates
 
 ---
 
-## Exception Test Case
+### Exception Test Case
 
-### {Test Case Description}
+### Test Data Requirements
+e.g., mock data DML databases, external system mocks
 
-#### Pre Condition
+### Example Payloads (if applicable)
+e.g., HTTP request/response samples, message broker payloads
+
+#### TC-001: {Test Case Description}
+
+##### Pre Condition
 
 - State conditions that must exist before testing.
   - Example: "User account exists but uses an incorrect password."
   - Example: "System has internet connection disabled."
 
-#### Steps
+##### Steps
 
 - Step 1: {First action under failure scenario}
 - Step 2: {Next action}
 - Step 3: {Continue until the error occurs}
 
-#### Expected Result
+##### Expected Result
 
 - Describe the correct system behavior under exception handling.
   - Example: "Error message 'Invalid username or password' is displayed."
   - Example: "System prevents transaction and logs the error."
 ```
-~                        
