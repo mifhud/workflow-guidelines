@@ -1,0 +1,198 @@
+[
+  {
+    "id": "1f7d640c-c486-44e9-af52-b2df68222a0a",
+    "isImported": true,
+    "name": "Diagram",
+    "prompts": [
+      {
+        "id": "0bf834d5-9613-478a-8c20-2f234f2f209b",
+        "isImported": false,
+        "text": "write a detailed xml code to make a schematic of a website application on draw.io",
+        "timestamp": "2025-08-21T07:36:21.749Z",
+        "title": "drawio xml"
+      }
+    ]
+  },
+  {
+    "id": "7c6171d7-f190-45ab-8cf6-bdb15e2c44ed",
+    "isImported": true,
+    "name": "Software",
+    "prompts": [
+      {
+        "id": "bcae6aea-bd13-4efd-ad61-37a0079deced",
+        "isImported": false,
+        "text": "Complete the given code using a naive or brute force solution.",
+        "timestamp": "2025-07-20T22:54:28.815Z",
+        "title": "Naive Solution"
+      },
+      {
+        "id": "dbafbdb7-0313-4885-a527-106edca2b66d",
+        "isImported": false,
+        "text": "Provide boilerplate code for the given algorithm problem.",
+        "timestamp": "2025-07-20T22:54:59.732Z",
+        "title": "Boilerplate Code"
+      },
+      {
+        "id": "a1fa4d85-d9b2-4de3-8b25-6fe5617a1e86",
+        "isImported": false,
+        "text": "Act as an interviewer who will interview me based on the resume I submitted to them. Provide me with a dialogue including both questions and answers.",
+        "timestamp": "2025-07-20T22:57:51.428Z",
+        "title": "Act Interviewer"
+      },
+      {
+        "id": "c131ba31-aad9-42f2-9681-0ffef5a6a38b",
+        "isImported": false,
+        "text": "Provide a interview conversation with HR for a {{role}} developer position.",
+        "timestamp": "2025-07-20T22:58:20.228Z",
+        "title": "HR Interviewer"
+      }
+    ]
+  },
+  {
+    "id": "d499d678-1983-415f-8fbe-7c3917bf8236",
+    "isImported": true,
+    "name": "Note",
+    "prompts": [
+      {
+        "id": "344c2723-456e-484d-a3b4-586553006870",
+        "isImported": false,
+        "text": "Create an outline note for the following text, including timestamps if it is a transcript. Format like: \n## Sub Title \n- timestamp-timestamp: Detail",
+        "timestamp": "2025-07-20T22:31:59.543Z",
+        "title": "Outline Note"
+      },
+      {
+        "id": "8ae6c9e2-a74d-472c-bfd6-b4a3a6afa6ff",
+        "isImported": false,
+        "text": "Provide an easy-to-understand and detailed explanation for a 5-year-old child.",
+        "timestamp": "2025-07-20T22:32:47.270Z",
+        "title": "5 Years Old Explanation"
+      },
+      {
+        "id": "b0155ce6-3623-4ab6-8e09-4cd470729bf7",
+        "isImported": false,
+        "text": "Create clear and descriptive title",
+        "timestamp": "2025-07-20T22:35:06.231Z",
+        "title": "Descriptive Title"
+      },
+      {
+        "id": "faf5f25f-a89b-474f-82e7-9a56fbed1be9",
+        "isImported": false,
+        "text": "Act as a learner and provide questions related to the discussion.",
+        "timestamp": "2025-07-20T22:36:28.820Z",
+        "title": "Provide Question"
+      },
+      {
+        "id": "da09a5f3-d96c-44e7-a455-d6aabf21a713",
+        "isImported": false,
+        "text": "Summarize the following in points with timestamp if it's transcript along with a title in each point.",
+        "timestamp": "2025-07-20T22:37:33.215Z",
+        "title": "Summarize in Points"
+      },
+      {
+        "id": "1bf27fce-5e44-4edd-a040-ce7ba9cbd4bb",
+        "isImported": false,
+        "text": "Provide highlighting colors for learning a {{book}} titled \"{{book}}\"",
+        "timestamp": "2025-07-20T22:39:58.766Z",
+        "title": "Highlighting Colors"
+      },
+      {
+        "id": "bcf13a4b-609c-4893-acff-9c41740cf414",
+        "isImported": false,
+        "text": "Provide note and full examples code based on",
+        "timestamp": "2025-10-07T04:13:55.330Z",
+        "title": "Example Code From Provided Text"
+      },
+      {
+        "id": "f9247f6d-26fa-4730-b22e-e81390681693",
+        "isImported": false,
+        "text": "Create an outline note for the following text, including timestamps if it is a transcript. Format like: \n## Sub Title (timestamp-timestamp)\n- Details",
+        "timestamp": "2025-10-11T06:42:58.988Z",
+        "title": "Outline Note V2"
+      },
+      {
+        "id": "cf439540-0039-4d95-8ac4-3b45616bccf4",
+        "isImported": false,
+        "text": "document.querySelectorAll('.asbplayer-subtitles-container-bottom')[0].style.setProperty('z-index', '2147483647', 'important');",
+        "timestamp": "2025-11-08T13:18:05.881Z",
+        "title": "asbplayer"
+      }
+    ]
+  },
+  {
+    "id": "47c42dc1-a537-4cba-8d01-3ca1c2457757",
+    "isImported": true,
+    "name": "English Learning",
+    "prompts": [
+      {
+        "id": "af02aa05-3668-43f6-8234-78153bebedfd",
+        "isImported": false,
+        "text": "Render into American English and rephrase given sentences.",
+        "timestamp": "2025-07-20T22:24:13.762Z",
+        "title": "Pharaprasing"
+      },
+      {
+        "id": "26990684-aa04-4043-a64f-bd4b6d039363",
+        "isImported": false,
+        "text": "Convert the image to sentences, merging lines separated by line breaks in the image if necessary. Change all capital letters into a well-formed letter along with its translation into formal and daily Indonesian and international phonetic alphabet for american accent.",
+        "timestamp": "2025-07-20T22:27:10.246Z",
+        "title": "IMG to ID with IPA"
+      },
+      {
+        "id": "8293c63b-354a-44a0-914c-7ee110ea2b02",
+        "isImported": false,
+        "text": "Add the appropriate punctuation to the following paragraph. Don't add or update any words.",
+        "timestamp": "2025-07-20T22:34:17.115Z",
+        "title": "Add Appropriate Punctuation for Transcript"
+      },
+      {
+        "id": "134ecb9b-de4a-4bea-9859-05338e9848cb",
+        "isImported": false,
+        "text": "Please provide details about the grammar, phrases and clauses utilized in the provided sentence.",
+        "timestamp": "2025-07-20T22:41:05.958Z",
+        "title": "Phrase and Clause Used"
+      },
+      {
+        "id": "14ee6c58-b87a-43ab-9992-d6e15779c63e",
+        "isImported": false,
+        "text": "Offer details regarding the grammatical usage in the given sentence",
+        "timestamp": "2025-07-20T22:48:37.089Z",
+        "title": "Grammar Used"
+      },
+      {
+        "id": "13a5eac0-6716-48cb-8af3-59e04a6e7cff",
+        "isImported": false,
+        "text": "Provide the original text, its translation into Indonesian, and the International Phonetic Alphabet (IPA) for American English pronunciation and separate each sentences.",
+        "timestamp": "2025-07-20T22:53:08.273Z",
+        "title": "IPA"
+      },
+      {
+        "id": "b96818ef-ecbe-4924-a72f-481d1382bf3f",
+        "isImported": false,
+        "text": "Provide a conversation between {{role}} in a daily meeting.",
+        "timestamp": "2025-07-20T22:57:00.005Z",
+        "title": "Provide Conversation Daily Meeting"
+      }
+    ]
+  },
+  {
+    "id": "611aba3d-1e66-48cb-8c93-21f7e993273f",
+    "isImported": false,
+    "name": "Finance",
+    "prompts": [
+      {
+        "id": "b154cfb7-3c24-4991-ae02-2efec86ac146",
+        "isImported": false,
+        "text": "Berikan penjelasan lengkap untuk setiap fungsi beserta parameter-parameternya, termasuk contoh input dan output dari formula",
+        "timestamp": "2025-11-18T16:29:30.526Z",
+        "title": "Explanation Google Sheet Formula"
+      },
+      {
+        "id": "6b7431db-bc88-4509-bb79-ad3a26e59262",
+        "isImported": false,
+        "text": "Jelaskan secara rinci dan dengan bahasa yang mudah dipahami oleh orang yang belum mengenal dunia saham",
+        "timestamp": "2025-11-29T12:56:06.607Z",
+        "title": "Penjelasan tentang Saham"
+      }
+    ]
+  }
+]
