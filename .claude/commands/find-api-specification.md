@@ -1,4 +1,4 @@
-Provide the API specifications or integration descriptions contained in the application. The inputs only on received, consumed, incoming, triggered by application:
+Provide the API specifications or integration descriptions contained in the application. The inputs may include:
 
 - HTTP API endpoints only recevied by the application
 - Message-broker queues/topics (e.g., Kafka, RabbitMQ) only consumed by the application

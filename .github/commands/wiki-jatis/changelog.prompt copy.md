@@ -12,6 +12,10 @@ description: Generate Changelog Readme Project
 ---
 
 ## What's Updated
+
+### {Title} (`{commit_hash} -> {commit_hash}`)
+
+**{Sub Title Commit}** (`{commit_hash}`)
 - {Description point 1}
 - {Description point 2}
 

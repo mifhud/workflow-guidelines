@@ -1,0 +1,1 @@
+IMPORTANT: (Create plan and save to spec/plan/{feature_name}.md. Don't create or edit other files other than markdown files.)

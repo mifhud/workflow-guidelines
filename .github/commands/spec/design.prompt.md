@@ -1,0 +1,1 @@
+IMPORTANT: (Create design and save to spec/design/{feature_name}.md. Don't create or edit other files other than markdown files.)

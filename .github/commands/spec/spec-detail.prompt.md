@@ -1,0 +1,1 @@
+Detail the specifications in {feature_name}/{point_feature_name}.md.
