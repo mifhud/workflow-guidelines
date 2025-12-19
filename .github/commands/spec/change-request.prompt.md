@@ -1,6 +1,6 @@
 # Analisis Change Request dan Buat Rencana Perubahan Code
 
-Analisis dokumen requirements terlampir. Bertindaklah sebagai Software Architect dan buatkan rencana implementasi kode tingkat rendah (low-level) yang sangat detail. Batasan: Fokus murni pada perubahan kode baru. JANGAN sertakan atau memikirkan backward compatibility atau penyesuaian testing(unit test/integration test).
+Analisis dokumen requirements terlampir. Bertindaklah sebagai Software Architect dan buatkan rencana implementasi kode tingkat rendah (low-level) yang sangat detail. Backward compatibility dan penyesuaian terhadap pengujian (unit test maupun integration test) tidak perlu dipertimbangkan.
 
 ## Output yang Diharapkan:
 
