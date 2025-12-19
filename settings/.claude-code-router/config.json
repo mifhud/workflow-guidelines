@@ -41,9 +41,11 @@
   "Router": {
     "default": "local-openrouter,z-ai/glm-4.5-air:free",
     "background": "local-openrouter,z-ai/glm-4.5-air:free",
-    "think": "local-openrouter,moonshotai/kimi-k2:free",
-    "longContext": "",
+    "think": "local-openrouter,deepseek/deepseek-r1-0528:free",
+    "longContext": "local-openrouter,deepseek/deepseek-r1-0528:free",
     "longContextThreshold": 60000,
-    "webSearch": "local-openrouter,z-ai/glm-4.5-air:free"
-  }
+    "webSearch": "local-openrouter,deepseek/deepseek-r1-0528:free",
+    "image": "local-openrouter,z-ai/glm-4.5-air:free"
+  },
+  "CUSTOM_ROUTER_PATH": ""
 }
