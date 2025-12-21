@@ -1,6 +1,7 @@
 Saya mendapatkan dokumen [TRD Baru / Change Request] dari leader saya yang perlu diklarifikasi lebih detail (karena leader saya tidak detail dalam menjelaskan kebutuhan tersebut).
 
 Ref doc:
+{REQUIREMENT_DOC}
 
 Tolong analisis dokumen di atas serta codebase dan buatkan daftar pertanyaan klarifikasi yang komprehensif dengan kategorisasi sebagai berikut:
 
@@ -33,4 +34,4 @@ Prioritaskan pertanyaan yang CRITICAL dan bisa menjadi blocker development.
 
 ## Output Location
 
-Simpan di spec/clarify/{feature-name}
+Simpan di spec/issue/{feature-name}
