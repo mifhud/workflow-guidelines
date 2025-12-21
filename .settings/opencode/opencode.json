@@ -182,16 +182,16 @@
       "enabled": true
     },
     "exa": {
-        "type": "local",
-        "command": [
-            "node",
-            "/root/.nvm/versions/node/v20.19.5/lib/node_modules/exa-mcp-server/.smithery/index.cjs",
-            "tools=get_code_context_exa,web_search_exa"
-        ],
-        "environment": {
-            "EXA_API_KEY": "9497cf7e-d3bb-4020-a5f1-e1be00c16679"
-        },
-        "enabled": true
+      "type": "local",
+      "command": [
+        "node",
+        "/root/.nvm/versions/node/v20.19.5/lib/node_modules/exa-mcp-server/.smithery/index.cjs",
+        "tools=get_code_context_exa,web_search_exa"
+      ],
+      "environment": {
+        "EXA_API_KEY": "9497cf7e-d3bb-4020-a5f1-e1be00c16679"
+      },
+      "enabled": true
     },
     "mermaid": {
       "url": "https://mcp.mermaidchart.com/mcp",
@@ -319,27 +319,86 @@
         "MYSQL_PASSWORD": "Jatis123$$$",
         "MYSQL_DATABASE": "web"
       },
-        "enabled": false
-    }
-  },
-  "permission": {
-    "bash": "allow",
-    "edit": "allow",
-    "webfetch": "allow",
-    "glob": "allow",
-    "grep": "allow",
-    "list": "allow",
-    "read": "allow",
-    "write": "ask",
-    "todowrite": "allow",
-    "todoread": "allow",
-    "task": "allow",
-    "context7_resolve_library_id": "allow",
-    "context7_get_library_docs": "allow",
-    "mysql-sit-broadcast_execute_sql": "ask",
-    "mysql-sit-apps-config_execute_sql": "ask"
-  },
-  "plugin": [
-    "opencode-antigravity-auth@1.2.0"
-  ]
-}
+      "enabled": false
+    },
+    "pgsql-sit-costerv3": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "DATABASE_URI",
+        "crystaldba/postgres-mcp",
+        "--access-mode=unrestricted"
+      ],
+      "environment": {
+        "DATABASE_URI": "postgresql://costerv3user:Cost3rv3P@ssw0rd@localhost:5432/costerv3"
+      },
+      "enabled": false
+    },
+    "pgsql-dev-smartswitch": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "DATABASE_URI",
+        "crystaldba/postgres-mcp",
+        "--access-mode=unrestricted"
+      ],
+      "environment": {
+        "DATABASE_URI": "postgresql://stgadmin:jatis123@10.0.7.128:5432/smartswitch"
+      },
+      "enabled": false
+    },
+    "mongo-dev-smartcollection": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mongodb-mcp-server@latest",
+        "--readOnly"
+      ],
+      "environment": {
+        "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/smart_collection?authSource=admin"
+      },
+      "enabled": false
+    },
+    "mongo-dev-paymentgw": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "mongodb-mcp-server@latest",
+        "--readOnly"
+      ],
+      "environment": {
+        "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/paymentgw?authSource=admin"
+      },
+      "enabled": false
+    },
+    "permission": {
+      "bash": "allow",
+      "edit": "allow",
+      "webfetch": "allow",
+      "glob": "allow",
+      "grep": "allow",
+      "list": "allow",
+      "read": "allow",
+      "write": "ask",
+      "todowrite": "allow",
+      "todoread": "allow",
+      "task": "allow",
+      "context7_resolve_library_id": "allow",
+      "context7_get_library_docs": "allow",
+      "mysql-sit-broadcast_execute_sql": "ask",
+      "mysql-sit-apps-config_execute_sql": "ask"
+    },
+    "plugin": [
+      "opencode-antigravity-auth@1.2.0"
+    ]
+  }

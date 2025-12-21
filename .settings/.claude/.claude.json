@@ -1,5 +1,16 @@
 {
     "mcpServers": {
+        "context7": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp",
+                "--api-key",
+                "ctx7sk-8d2cdeb3-9200-4994-b02a-da7f09316917"
+            ],
+            "env": {}
+        },
         "exa": {
             "type": "stdio",
             "command": "node",
@@ -15,7 +26,21 @@
             "type": "http",
             "url": "https://mcp.grep.app"
         },
+        "brave": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "brave-search-mcp"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "BSA_K_k-ApzPbgbPXXWF6EpbZO_NP1r"
+            },
+            "disabled": false,
+            "alwaysAllow": []
+        },
         "firecrawl": {
+            "type": "stdio",
             "command": "npx",
             "args": [
                 "-y",
@@ -24,7 +49,6 @@
             "env": {
                 "FIRECRAWL_API_KEY": "fc-425c51abc5a7426c8e95201aa3301cc5"
             },
-            "disabled": true,
             "alwaysAllow": []
         },
         "sonarqube": {
@@ -52,6 +76,22 @@
                 "SONARQUBE_TOKEN": "a52d32cd374c3481070f86f7ebb5ad340fd00af4"
             },
             "timeout": 60
+        },
+        "sqlsrv-prod-master": {
+            "type": "stdio",
+            "command": "python3",
+            "args": [
+                "/opt/mcp-sqlserver/server.py"
+            ],
+            "env": {
+                "MSSQL_SERVER": "10.0.7.11",
+                "MSSQL_PORT": "1433",
+                "MSSQL_USER": "reader",
+                "MSSQL_PASSWORD": "reader",
+                "MSSQL_DATABASE": "master",
+                "MSSQL_TDS_VERSION": "7.0",
+                "MCP_DEBUG": "true"
+            }
         },
         "mysql-sit-apps-config": {
             "type": "stdio",
@@ -131,6 +171,62 @@
                 "MYSQL_USER": "root",
                 "MYSQL_PASSWORD": "Jatis123$$$",
                 "MYSQL_DATABASE": "web"
+            }
+        },
+        "pgsql-sit-costerv3": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "DATABASE_URI",
+                "crystaldba/postgres-mcp",
+                "--access-mode=unrestricted"
+            ],
+            "env": {
+                "DATABASE_URI": "postgresql://costerv3user:Cost3rv3P@ssw0rd@localhost:5432/costerv3"
+            }
+        },
+        "pgsql-dev-smartswitch": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "DATABASE_URI",
+                "crystaldba/postgres-mcp",
+                "--access-mode=unrestricted"
+            ],
+            "env": {
+                "DATABASE_URI": "postgresql://stgadmin:jatis123@10.0.7.128:5432/smartswitch"
+            }
+        },
+        "mongo-dev-smartcollection": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "mongodb-mcp-server@latest",
+                "--readOnly"
+            ],
+            "env": {
+                "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/smart_collection?authSource=admin"
+            }
+        },
+        "mongo-dev-paymentgw": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "mongodb-mcp-server@latest",
+                "--readOnly"
+            ],
+            "env": {
+                "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/paymentgw?authSource=admin"
             }
         }
     }
