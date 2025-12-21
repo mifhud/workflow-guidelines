@@ -208,7 +208,7 @@
         "ctx7sk-8d2cdeb3-9200-4994-b02a-da7f09316917"
       ],
       "environment": {},
-      "enabled": false
+      "enabled": true
     },
     "sonarqube": {
       "type": "local",
@@ -221,7 +221,7 @@
         "SONARQUBE_URL": "https://sonarqube.jatismobile.com",
         "SONARQUBE_TOKEN": "squ_894e2adad90179ea8a0f89cbb942feb1a5d6b6f8"
       },
-      "enabled": false
+      "enabled": true
     },
     "sonarqubev8": {
       "type": "local",
@@ -234,7 +234,7 @@
         "SONARQUBE_URL": "https://sonarqubev8.jatismobile.com",
         "SONARQUBE_TOKEN": "a52d32cd374c3481070f86f7ebb5ad340fd00af4"
       },
-      "enabled": false
+      "enabled": true
     },
     "mysql-sit-broadcast": {
       "type": "local",
@@ -251,7 +251,7 @@
         "MYSQL_PASSWORD": "jatis123",
         "MYSQL_DATABASE": "broadcast"
       },
-      "enabled": false
+      "enabled": true
     },
     "mysql-sit-web": {
       "type": "local",
@@ -268,7 +268,7 @@
         "MYSQL_PASSWORD": "jatis123",
         "MYSQL_DATABASE": "web"
       },
-      "enabled": false
+      "enabled": true
     },
     "mysql-sit-apps-config": {
       "type": "local",
@@ -285,7 +285,7 @@
         "MYSQL_PASSWORD": "jatis123",
         "MYSQL_DATABASE": "apps_config"
       },
-      "enabled": false
+      "enabled": true
     },
     "mysql-dev-broadcast": {
       "type": "local",
@@ -302,7 +302,7 @@
         "MYSQL_PASSWORD": "Jatis123$$$",
         "MYSQL_DATABASE": "broadcast"
       },
-      "enabled": false
+      "enabled": true
     },
     "mysql-dev-web": {
       "type": "local",
@@ -319,7 +319,7 @@
         "MYSQL_PASSWORD": "Jatis123$$$",
         "MYSQL_DATABASE": "web"
       },
-      "enabled": false
+      "enabled": true
     },
     "pgsql-sit-costerv3": {
       "type": "local",
@@ -336,7 +336,7 @@
       "environment": {
         "DATABASE_URI": "postgresql://costerv3user:Cost3rv3P@ssw0rd@localhost:5432/costerv3"
       },
-      "enabled": false
+      "enabled": true
     },
     "pgsql-dev-smartswitch": {
       "type": "local",
@@ -353,7 +353,7 @@
       "environment": {
         "DATABASE_URI": "postgresql://stgadmin:jatis123@10.0.7.128:5432/smartswitch"
       },
-      "enabled": false
+      "enabled": true
     },
     "mongo-dev-smartcollection": {
       "type": "local",
@@ -366,7 +366,7 @@
       "environment": {
         "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/smart_collection?authSource=admin"
       },
-      "enabled": false
+      "enabled": true
     },
     "mongo-dev-paymentgw": {
       "type": "local",
@@ -379,7 +379,7 @@
       "environment": {
         "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/paymentgw?authSource=admin"
       },
-      "enabled": false
+      "enabled": true
     },
     "permission": {
       "bash": "allow",
