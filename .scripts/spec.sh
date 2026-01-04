@@ -19,6 +19,7 @@ ENTRY="spec/archive"
 SETTINGS_ENTRY=".settings"
 MCP_CLAUDE_ENTRY=".mcp.json"
 OPENCODE_ENTRY="opencode.json"
+JDTLS_ENTRY=".jdtls-workspace"
 
 if [ -f "$GITIGNORE" ]; then
     # If the file exists, add a newline and the entries to ensure they don't merge with existing text
@@ -27,14 +28,16 @@ if [ -f "$GITIGNORE" ]; then
     echo "$SETTINGS_ENTRY" >> "$GITIGNORE"
     echo "$MCP_CLAUDE_ENTRY" >> "$GITIGNORE"
     echo "$OPENCODE_ENTRY" >> "$GITIGNORE"
-    echo "✅ '$ENTRY', '$SETTINGS_ENTRY', '$MCP_CLAUDE_ENTRY', and '$OPENCODE_ENTRY' added to the existing .gitignore."
+    echo "$JDTLS_ENTRY" >> "$GITIGNORE"
+    echo "✅ '$ENTRY', '$SETTINGS_ENTRY', '$MCP_CLAUDE_ENTRY', '$OPENCODE_ENTRY', and '$JDTLS_ENTRY' added to the existing .gitignore."
 else
     # If the file does not exist, create a new one
     echo "$ENTRY" >> "$GITIGNORE"
     echo "$SETTINGS_ENTRY" >> "$GITIGNORE"
     echo "$MCP_CLAUDE_ENTRY" >> "$GITIGNORE"
     echo "$OPENCODE_ENTRY" >> "$GITIGNORE"
-    echo "✅ New .gitignore created with entries '$ENTRY', '$SETTINGS_ENTRY', '$MCP_CLAUDE_ENTRY', and '$OPENCODE_ENTRY'."
+    echo "$JDTLS_ENTRY" >> "$GITIGNORE"
+    echo "✅ New .gitignore created with entries '$ENTRY', '$SETTINGS_ENTRY', '$MCP_CLAUDE_ENTRY', '$OPENCODE_ENTRY', and '$JDTLS_ENTRY'."
 fi
 
 # 3. Create .mcp.json file
@@ -52,6 +55,8 @@ OPENCODE_FILE="opencode.json"
 cat > "$OPENCODE_FILE" << 'EOF'
 {
   "mcp": {
+  },
+  "lsp": {
   }
 }
 EOF
