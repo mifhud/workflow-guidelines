@@ -141,6 +141,22 @@
                 "MYSQL_DATABASE": "broadcast"
             }
         },
+        "mysql-dev-apps_config": {
+            "type": "stdio",
+            "command": "uvx",
+            "args": [
+                "--from",
+                "mysql-mcp-server",
+                "mysql_mcp_server"
+            ],
+            "env": {
+                "MYSQL_HOST": "43.133.129.138",
+                "MYSQL_PORT": "3306",
+                "MYSQL_USER": "root",
+                "MYSQL_PASSWORD": "Jatis123$$$",
+                "MYSQL_DATABASE": "apps_config"
+            }
+        },
         "mysql-dev-broadcast": {
             "type": "stdio",
             "command": "uvx",
@@ -155,6 +171,22 @@
                 "MYSQL_USER": "root",
                 "MYSQL_PASSWORD": "Jatis123$$$",
                 "MYSQL_DATABASE": "broadcast"
+            }
+        },
+        "mysql-dev-token": {
+            "type": "stdio",
+            "command": "uvx",
+            "args": [
+                "--from",
+                "mysql-mcp-server",
+                "mysql_mcp_server"
+            ],
+            "env": {
+                "MYSQL_HOST": "43.133.129.138",
+                "MYSQL_PORT": "3306",
+                "MYSQL_USER": "root",
+                "MYSQL_PASSWORD": "Jatis123$$$",
+                "MYSQL_DATABASE": "token"
             }
         },
         "mysql-dev-web": {
@@ -228,6 +260,16 @@
             "env": {
                 "MDB_MCP_CONNECTION_STRING": "mongodb://sitadmin:adminsit@10.0.7.128:27017/paymentgw?authSource=admin"
             }
+        },
+        "sqlite-local-anki": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-sqlite",
+                "/mnt/d/02 Areas/Anki2/note.mifhud/collection.anki2"
+            ],
+            "enabled": true
         }
     }
 }
