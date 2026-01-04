@@ -1,3 +1,11 @@
+Important Rules:
+- JANGAN HAPUS DATA EXISTING YANG SUDAH ADA DI DATABASE SEBELUMNYA.
+- JANGAN MODIFIKASI CODE APAPUN - hanya eksekusi test dan laporkan hasil
+- don't remove files test and log files
+- don't clean up test data in databases after uat run
+
+---
+
 Saya akan memberikan dokumen UAT untuk diverifikasi. Tugas Anda:
 
 1. ANALISIS JENIS TEST dari UAT yang diberikan:
@@ -33,9 +41,7 @@ Saya akan memberikan dokumen UAT untuk diverifikasi. Tugas Anda:
    - Sertakan evidence yang mendukung diagnosis
 
 CATATAN:
-- JANGAN HAPUS DATA EXISTING(BUKAN TEST DATA REQUIREMENTS) YANG SUDAH ADA DI DATABASE
-- Gunakan MCP database server untuk setup dan cleanup data test jika ada insert/update data test
-- JANGAN MODIFIKASI CODE APAPUN - hanya eksekusi test dan laporkan hasil
+- Gunakan MCP database server untuk setup
 - Fokus pada accuracy diagnosis dan clarity reporting
 
 6. FORMAT LAPORAN UAT (gunakan format ini):
@@ -89,9 +95,9 @@ CATATAN:
 ```
 
 7. DELIVERABLES:
-   - Simpan di folder: `spec/debug/uat/results/`
-   - File laporan: `uat-result-{timestamp}.md`
-   - Evidence folder: `evidence/uat-result-{timestamp}` berisi:
+   - Simpan di new folder: `spec/debug/uat/results/{timestamp}`
+   - File laporan: `uat-result.md`
+   - Evidence folder: `evidence` berisi:
      - responses/ (response dari setiap request)
      - logs/ (log files)
      - screenshots/ (jika ada)

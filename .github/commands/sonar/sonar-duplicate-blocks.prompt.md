@@ -15,4 +15,5 @@ Duplication Location Code:
 Fix Approach: Fix Approach
 ```
 
-Save in file: sonar/duplicate-blocks-{datemonthhourminutesecond}.md
+Save in folder: spec/plan/sonar
+Save in new file: duplicate-blocks-{datemonthhourminutesecond}.md

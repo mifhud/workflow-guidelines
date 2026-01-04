@@ -29,10 +29,10 @@ description: Generate User Acceptance Test (UAT) cases from structured templates
 
 #### TC-001: {Test Case Description}
 
-### Test Data Requirements (if applicable)
+##### Test Data Requirements (if applicable)
 e.g., mock data DML databases, external system mocks
 
-### Example Payloads (if applicable)
+##### Example Payloads (if applicable)
 - HTTP API endpoints only recevied by the application
 - Message-broker queues/topics (e.g., Kafka, RabbitMQ) only consumed by the application
 
@@ -59,13 +59,13 @@ e.g., mock data DML databases, external system mocks
 
 ### Exception Test Case
 
-### Test Data Requirements  (if applicable)
+#### TC-001: {Test Case Description}
+
+##### Test Data Requirements (if applicable)
 e.g., mock data DML databases, external system mocks
 
-### Example Payloads (if applicable)
+##### Example Payloads (if applicable)
 e.g., HTTP request/response samples, message broker payloads
-
-#### TC-001: {Test Case Description}
 
 ##### Pre Condition
 

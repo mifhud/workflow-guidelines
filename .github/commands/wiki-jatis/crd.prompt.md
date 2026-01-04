@@ -6,7 +6,7 @@ Buatkan change request dengan detail sebagai berikut:
 - sonar {current_sonar_link}
 
 ## Implementation Procedure:
-Instruction for implementation can be found in {current_link_repository without .wiki}/-wikis/home
+Instruction for implementation can be found in {current_link_repository without .wiki}/-/wikis/home
 
 ## Post-Implementation Procedure
-Gunakan pengujian sebelumnya dari tim SIT atau dapat melihat di {current_link_repository without .wiki}/-wikis/{version}/{feature}
+Gunakan pengujian sebelumnya dari tim SIT atau dapat melihat di {current_link_repository without .wiki}/-/wikis/{version}/{feature}
