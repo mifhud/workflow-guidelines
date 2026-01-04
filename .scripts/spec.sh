@@ -61,3 +61,24 @@ cat > "$OPENCODE_FILE" << 'EOF'
 }
 EOF
 echo "✅ opencode.json created successfully."
+
+# 5. Create .claude/config.json file
+mkdir -p ".claude"
+CLAUDE_CONFIG_FILE=".claude/config.json"
+cat > "$CLAUDE_CONFIG_FILE" << 'EOF'
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git checkout:*)"
+    ],
+    "deny": [
+      "Bash(git rm:*)"
+    ]
+  }
+}
+EOF
+echo "✅ .claude/config.json created successfully."
